@@ -34,16 +34,16 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 # post setup nvm and android SDK location into zshrc
 touch "$HOME"/.zshrc;
-echo "export NVM_DIR=\"$HOME/.nvm\"" >> "$HOME"/.zshrc;
-echo "[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"  # This loads nvm" >> "$HOME"/.zshrc;
+echo "export NVM_DIR=\"\$HOME/.nvm\"" >> "$HOME"/.zshrc;
+echo "[ -s \"\$NVM_DIR/nvm.sh\" ] && . \"\$NVM_DIR/nvm.sh\"  # This loads nvm" >> "$HOME"/.zshrc;
 echo "" >> "$HOME"/.zshrc;
 
 echo "# export android SDK location" >> "$HOME"/.zshrc;
-echo "export ANDROID_HOME=$HOME/Library/Android/sdk" >> "$HOME"/.zshrc;
-echo "export PATH=$PATH:$ANDROID_HOME/emulator" >> "$HOME"/.zshrc;
-echo "export PATH=$PATH:$ANDROID_HOME/tools" >> "$HOME"/.zshrc;
-echo "export PATH=$PATH:$ANDROID_HOME/tools/bin" >> "$HOME"/.zshrc;
-echo "export PATH=$PATH:$ANDROID_HOME/platform-tools" >> "$HOME"/.zshrc;
+echo "export ANDROID_HOME=\$HOME/Library/Android/sdk" >> "$HOME"/.zshrc;
+echo "export PATH=\$PATH:\$ANDROID_HOME/emulator" >> "$HOME"/.zshrc;
+echo "export PATH=\$PATH:\$ANDROID_HOME/tools" >> "$HOME"/.zshrc;
+echo "export PATH=\$PATH:\$ANDROID_HOME/tools/bin" >> "$HOME"/.zshrc;
+echo "export PATH=\$PATH:\$ANDROID_HOME/platform-tools" >> "$HOME"/.zshrc;
 source "$HOME"/.zshrc; nvm ls-remote
 
 # install node lts via nvm ( nvm install --lts )
