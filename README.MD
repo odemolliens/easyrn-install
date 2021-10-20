@@ -13,7 +13,7 @@ Before you launch this script, you must manually install the followings tools:
 You can execute this script remotely with the following command:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://gitlab.com/arhs-spikeseed-mobile/easyRN/-/raw/master/easyrn.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/odemolliens/easyrn-install/master/easyrn.sh)"
 ```
 
 **NOTE**: during the script execution, you might be prompted for your sudo password to install the different tools.
