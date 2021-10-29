@@ -5,7 +5,6 @@ abort() {
   exit 1
 }
 
-
 # Check if bash is present
 if [ -z "${BASH_VERSION:-}" ]
 then
@@ -22,6 +21,12 @@ fi
 # TODO: Check if Xcode has been installed
 # TODO: Check is Xcode command line tools are installed
 
+# Allow user to select node version
+select node_version in --lts 12.19.0
+  do
+    NODE_VERSION="$node_version"
+    break
+  done
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -47,7 +52,7 @@ echo "export PATH=\$PATH:\$ANDROID_HOME/platform-tools" >> "$HOME"/.zshrc;
 source "$HOME"/.zshrc; nvm ls-remote
 
 # install node lts via nvm ( nvm install --lts )
-nvm install --lts
+nvm install "$NODE_VERSION"
 
 # install yarn ( npm install -g yarn )
 npm install -g yarn
