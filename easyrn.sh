@@ -5,6 +5,11 @@ abort() {
   exit 1
 }
 
+select node_version in --lts 12.19.0
+  do
+    NODE_VERSION="$node_version"
+    break
+  done
 
 # Check if bash is present
 if [ -z "${BASH_VERSION:-}" ]
@@ -47,7 +52,7 @@ echo "export PATH=\$PATH:\$ANDROID_HOME/platform-tools" >> "$HOME"/.zshrc;
 source "$HOME"/.zshrc; nvm ls-remote
 
 # install node lts via nvm ( nvm install --lts )
-nvm install --lts
+nvm install "$NODE_VERSION"
 
 # install yarn ( npm install -g yarn )
 npm install -g yarn
