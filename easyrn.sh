@@ -22,7 +22,7 @@ fi
 # TODO: Check is Xcode command line tools are installed
 
 # Allow user to select node version
-select node_version in --lts 12.19.0
+select node_version in --lts 12.19.0 14.20.0
   do
     NODE_VERSION="$node_version"
     break
@@ -71,7 +71,7 @@ brew tap wix/brew; brew install applesimutils
 
 # brew tap homebrew/cask
 brew tap homebrew/cask;
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk8;
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk11;
 brew install android-studio --cask;
 brew install android-platform-tools --cask;
 brew install google-chrome --cask ;
