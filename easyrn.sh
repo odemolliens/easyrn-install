@@ -81,6 +81,7 @@ brew install reactotron --cask;
 brew install slack --cask;
 brew install intel-haxm --cask;
 brew install charles --cask
+brew install flipper --cask 
 
 # npx envinfo
 npx envinfo
