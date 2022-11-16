@@ -16,7 +16,7 @@ You can execute this script remotely with the following command:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/odemolliens/easyrn-install/master/easyrn.sh)"
 ```
 
-At the beginning of the script, you will have to choose the node version, between `lts` or `12.19.0` and the process will start to install all tools.
+At the beginning of the script, you will have to choose the node version, between `lts` or `12.19.0` or `14.20.0` and the process will start to install all tools.
 
 **NOTE**: during the script execution, you might be prompted for your sudo password to install the different tools.
 
