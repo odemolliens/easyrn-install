@@ -31,11 +31,12 @@ This script will ensure that your environment is React Native ready by installin
 - [carthage](https://github.com/Carthage/Carthage)
 - [charles](https://www.charlesproxy.com)
 - [cocoapods](https://cocoapods.org)
+- [flipper](https://fbflipper.com)
 - [google-chrome-canary](https://www.google.com/chrome/canary/)
 - [intel-haxm](https://github.com/intel/haxm)
 - [nvm](https://github.com/nvm-sh/nvm)
 - node lts version via nvm
-- [openjdk8](https://openjdk.java.net/projects/jdk8/)
+- [openjdk11](https://openjdk.org/projects/jdk/11/)
 - [reactotron](https://infinite.red/reactotrons)
 - [slack](https://slack.com)
 - [visual-studio-code](https://code.visualstudio.com)
